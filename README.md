@@ -32,6 +32,7 @@
 
   ## Test
   No testing file. Just run the project using the instructions. 
+  [View Deployment](https://ryleethomas.github.io/CodeQuiz/)
   
 
   ## Questions
