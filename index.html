@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/stylesheet.css"/>
+    <title>Coding Quiz</title>
+</head>
+<body>
+    <header>
+        <a class="highScore" onclick="viewScoreBoard();">View High Scores</a>
+        <p id="timer">Time</p>
+    </header>
+
+    <section class="homescreen">
+        <h1>Coding Quiz Challenge</h1>
+        <p>Try to answer all of the quetions within the time limit.<br> Keep in mind the incorrect answers will penalize your score/time by ten seconds! </p>
+        <button id="SQbtn">Start Quiz</button>
+    </section>
+    
+    <section class="slideShowContainer"> 
+        <div class="mySlides ">
+            <h1> What does HTML stand for? </h1>
+            <ol>
+                <button class="questionbtn" value="false">A. Hyper Trainer Marketing Language</button>
+                <button class="questionbtn" value= false>B. Hyper Text Marketing Language</button>
+                <button class="questionbtn" value= true>C. Hyper Text Markup Language</button>
+                <button class="questionbtn" value= false>D. Hyper Text Markup Leveler</button>
+            </ol>
+        </div>
+
+        <div class="mySlides ">
+            <h1> Which of the following is not a valid JavaScript variable name?</h1>
+            <ul>
+                <button class="questionbtn" value="false">A. 2names</button>
+                <button class="questionbtn" value="true">B. _first_and_last_names</button>
+                <button class="questionbtn" value="false">C. FistAndLast</button>
+                <button class="questionbtn" value="false">D. None of the above</button>
+            </ul>
+        </div>
+
+        <div class="mySlides ">
+            <h1>What is the correct JavaScript syntax to write "Hello World"?</h1>
+            <ul>
+                <button class="questionbtn" value="false">A. System.out.println("Hello World")</button>
+                <button class="questionbtn" value="false">B. pirntln("Hello World")</button>
+                <button class="questionbtn" value="true">C. document.write("Hello World")</button>
+                <button class="questionbtn" value="false">D. response.write("Hello World")</button>
+            </ul>
+        </div>
+
+        <div class="mySlides ">
+            <h1> Which is the correct way to write a JavaScript array?</h1>
+            <ul>
+                <button class="questionbtn" value="false">A.  var txt = new Array(1:"tim",2:"kim",3:"jim")</button>
+                <button class="questionbtn" value="false">B.   var txt = new Array:1=("tim")2=("kim")3=("jim")</button>
+                <button class="questionbtn" value="false">C.  var txt = new Array="tim","kim","jim"</button>
+                <button class="questionbtn" value="true">D.  var txt = new Array("tim","kim","jim")</button>
+            </ul>
+        </div>
+
+        <div class="mySlides ">
+            <h1>Which of the following is not considered a JavaScript operator?</h1>
+            <ul>
+                <button class="questionbtn" value="false">A.  new</button>
+                <button class="questionbtn" value="true">B.  this</button>
+                <button class="questionbtn" value="false">C.  delete</button>
+                <button class="questionbtn" value="false">D.  typeof</button>
+            </ul>
+        </div>
+
+        <div class="mySlides ">
+            <h1>Using _______ statement is how you test for a specific condition.</h1>
+            <ul>
+                <button class="questionbtn" value="false">A.  Select</button>
+                <button class="questionbtn" value="true">B.  If</button>
+                <button class="questionbtn" value="false">C.  Switch</button>
+                <button class="questionbtn" value="false">D.  For</button>
+            </ul>
+        </div>
+    </section>
+
+    <section class="enterScore">
+        <h1>Save your Score to the ScoreBoard</h1>
+        <p id="displayScore"></p>
+        <form method="post">
+            <input type="text" name="int-input" id="int-input" placeholder="Enter Initials"/>
+            <button id="savebtn" type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section class="ScoreBoard">
+        <h1>High Scores</h1>
+        <div id="pullHighScores"></div>
+        <button class="restartQuiz">Take Quiz</button>
+    </section>
+
+<script src="./script.js"></script>
+</body>
+</html>
